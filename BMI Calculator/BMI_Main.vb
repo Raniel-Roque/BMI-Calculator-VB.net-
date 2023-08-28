@@ -111,8 +111,8 @@
                 BMIBox.Text = (WeightDouble / (HeightDouble ^ 2)).ToString("F1")
             ElseIf WeightConvert.SelectedItem.ToString = "lbs" Then
                 ' Handle m and lb
-                ' Converts kg to lbs by multiplying 2.205
-                BMIBox.Text = ((WeightDouble * 2.205) / (HeightDouble ^ 2)).ToString("F1")
+                ' Converts lbs to kg by dividing 2.205
+                BMIBox.Text = ((WeightDouble / 2.205) / (HeightDouble ^ 2)).ToString("F1")
             End If
         End If
 
