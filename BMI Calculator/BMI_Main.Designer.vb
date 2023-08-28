@@ -38,7 +38,7 @@ Partial Class BMI_Main
         Me.Clear = New System.Windows.Forms.Button()
         Me.Compute = New System.Windows.Forms.Button()
         Me.HeightTxT = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Exp_Col = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -91,7 +91,6 @@ Partial Class BMI_Main
         Me.BackToolStripMenuItem.Padding = New System.Windows.Forms.Padding(5)
         Me.BackToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.BackToolStripMenuItem.Size = New System.Drawing.Size(30, 30)
-        Me.BackToolStripMenuItem.ToolTipText = "Home "
         '
         'HeightBox
         '
@@ -224,24 +223,24 @@ Partial Class BMI_Main
         Me.HeightTxT.TabIndex = 13
         Me.HeightTxT.Text = "Height"
         '
-        'Button1
+        'Exp_Col
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Transparent
-        Me.Button1.Location = New System.Drawing.Point(0, 281)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Size = New System.Drawing.Size(308, 28)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "BMI Table (Expand)"
-        Me.Button1.UseCompatibleTextRendering = True
-        Me.Button1.UseMnemonic = False
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Exp_Col.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Exp_Col.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Exp_Col.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Exp_Col.FlatAppearance.BorderSize = 0
+        Me.Exp_Col.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Exp_Col.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Exp_Col.ForeColor = System.Drawing.Color.Transparent
+        Me.Exp_Col.Location = New System.Drawing.Point(0, 281)
+        Me.Exp_Col.Name = "Exp_Col"
+        Me.Exp_Col.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Exp_Col.Size = New System.Drawing.Size(308, 28)
+        Me.Exp_Col.TabIndex = 14
+        Me.Exp_Col.Text = "BMI Table (Expand)"
+        Me.Exp_Col.UseCompatibleTextRendering = True
+        Me.Exp_Col.UseMnemonic = False
+        Me.Exp_Col.UseVisualStyleBackColor = False
         '
         'Label7
         '
@@ -249,9 +248,9 @@ Partial Class BMI_Main
         Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(105, 25)
+        Me.Label7.Location = New System.Drawing.Point(104, 25)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(175, 25)
+        Me.Label7.Size = New System.Drawing.Size(176, 25)
         Me.Label7.TabIndex = 20
         Me.Label7.Text = "Very Severely Underweight"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -264,7 +263,7 @@ Partial Class BMI_Main
         Me.Label5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(3, 25)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(96, 25)
+        Me.Label5.Size = New System.Drawing.Size(95, 25)
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "> 15"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -278,7 +277,7 @@ Partial Class BMI_Main
         Me.Label1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(3, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 25)
+        Me.Label1.Size = New System.Drawing.Size(95, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "BMI"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -291,9 +290,9 @@ Partial Class BMI_Main
         Me.Label6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(3, 50)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(96, 25)
+        Me.Label6.Size = New System.Drawing.Size(95, 25)
         Me.Label6.TabIndex = 19
-        Me.Label6.Text = "15.1 - 16"
+        Me.Label6.Text = "15 - 16"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label8
@@ -302,9 +301,9 @@ Partial Class BMI_Main
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.Label8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(105, 50)
+        Me.Label8.Location = New System.Drawing.Point(104, 50)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(175, 25)
+        Me.Label8.Size = New System.Drawing.Size(176, 25)
         Me.Label8.TabIndex = 21
         Me.Label8.Text = "Severely Underweight"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -317,7 +316,7 @@ Partial Class BMI_Main
         Me.Label9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(3, 75)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(96, 25)
+        Me.Label9.Size = New System.Drawing.Size(95, 25)
         Me.Label9.TabIndex = 22
         Me.Label9.Text = "16.1 - 18.5"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -328,9 +327,9 @@ Partial Class BMI_Main
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.Label10.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label10.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(105, 75)
+        Me.Label10.Location = New System.Drawing.Point(104, 75)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(175, 25)
+        Me.Label10.Size = New System.Drawing.Size(176, 25)
         Me.Label10.TabIndex = 23
         Me.Label10.Text = "Underweight"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -343,7 +342,7 @@ Partial Class BMI_Main
         Me.Label11.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(3, 100)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(96, 25)
+        Me.Label11.Size = New System.Drawing.Size(95, 25)
         Me.Label11.TabIndex = 24
         Me.Label11.Text = "18.5 - 25"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -354,9 +353,9 @@ Partial Class BMI_Main
         Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.Label12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(105, 100)
+        Me.Label12.Location = New System.Drawing.Point(104, 100)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(175, 25)
+        Me.Label12.Size = New System.Drawing.Size(176, 25)
         Me.Label12.TabIndex = 25
         Me.Label12.Text = "Normal (Healthy Weight)"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -369,7 +368,7 @@ Partial Class BMI_Main
         Me.Label13.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.Location = New System.Drawing.Point(3, 125)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(96, 25)
+        Me.Label13.Size = New System.Drawing.Size(95, 25)
         Me.Label13.TabIndex = 26
         Me.Label13.Text = "25.1 - 30"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -380,9 +379,9 @@ Partial Class BMI_Main
         Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.Label14.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label14.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(105, 125)
+        Me.Label14.Location = New System.Drawing.Point(104, 125)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(175, 25)
+        Me.Label14.Size = New System.Drawing.Size(176, 25)
         Me.Label14.TabIndex = 27
         Me.Label14.Text = "Overweight"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -395,7 +394,7 @@ Partial Class BMI_Main
         Me.Label15.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.Location = New System.Drawing.Point(3, 150)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(96, 25)
+        Me.Label15.Size = New System.Drawing.Size(95, 25)
         Me.Label15.TabIndex = 28
         Me.Label15.Text = "30.1 - 35"
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -406,9 +405,9 @@ Partial Class BMI_Main
         Me.Label16.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.Label16.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label16.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(105, 150)
+        Me.Label16.Location = New System.Drawing.Point(104, 150)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(175, 25)
+        Me.Label16.Size = New System.Drawing.Size(176, 25)
         Me.Label16.TabIndex = 29
         Me.Label16.Text = "Obese"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -421,7 +420,7 @@ Partial Class BMI_Main
         Me.Label17.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.Location = New System.Drawing.Point(3, 175)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(96, 25)
+        Me.Label17.Size = New System.Drawing.Size(95, 25)
         Me.Label17.TabIndex = 30
         Me.Label17.Text = "35.1 - 40"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -432,9 +431,9 @@ Partial Class BMI_Main
         Me.Label18.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.Label18.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label18.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(105, 175)
+        Me.Label18.Location = New System.Drawing.Point(104, 175)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(175, 25)
+        Me.Label18.Size = New System.Drawing.Size(176, 25)
         Me.Label18.TabIndex = 31
         Me.Label18.Text = "Severely Obese"
         Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -447,7 +446,7 @@ Partial Class BMI_Main
         Me.Label19.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.Location = New System.Drawing.Point(3, 200)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(96, 31)
+        Me.Label19.Size = New System.Drawing.Size(95, 31)
         Me.Label19.TabIndex = 32
         Me.Label19.Text = "< 40.1"
         Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -458,9 +457,9 @@ Partial Class BMI_Main
         Me.Label20.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.Label20.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label20.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(105, 200)
+        Me.Label20.Location = New System.Drawing.Point(104, 200)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(175, 31)
+        Me.Label20.Size = New System.Drawing.Size(176, 31)
         Me.Label20.TabIndex = 33
         Me.Label20.Text = "Very Severely Obese"
         Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -513,9 +512,9 @@ Partial Class BMI_Main
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(105, 0)
+        Me.Label2.Location = New System.Drawing.Point(104, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(175, 25)
+        Me.Label2.Size = New System.Drawing.Size(176, 25)
         Me.Label2.TabIndex = 16
         Me.Label2.Text = "BMI Category"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -527,7 +526,7 @@ Partial Class BMI_Main
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(180, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(308, 309)
         Me.Controls.Add(Me.TableLayoutPanel1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Exp_Col)
         Me.Controls.Add(Me.HeightTxT)
         Me.Controls.Add(Me.Compute)
         Me.Controls.Add(Me.Clear)
@@ -546,7 +545,7 @@ Partial Class BMI_Main
         Me.MainMenuStrip = Me.MenuBar
         Me.Name = "BMI_Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Body Mass Index Calculator"
+        Me.Text = "BMI Calculator"
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuBar.ResumeLayout(False)
         Me.MenuBar.PerformLayout()
@@ -572,7 +571,7 @@ Partial Class BMI_Main
     Friend WithEvents Compute As Button
     Friend WithEvents Clear As Button
     Friend WithEvents HeightTxT As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Exp_Col As Button
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Label20 As Label
     Friend WithEvents Label19 As Label
