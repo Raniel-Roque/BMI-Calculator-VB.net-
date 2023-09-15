@@ -123,7 +123,7 @@
             BMICatBox.Text = "Severely Underweight"
         ElseIf Double.Parse(BMIBox.Text) >= 16.1 AndAlso Double.Parse(BMIBox.Text) <= 18.5 Then
             BMICatBox.Text = "Underweight"
-        ElseIf Double.Parse(BMIBox.Text) >= 18.5 AndAlso Double.Parse(BMIBox.Text) <= 25 Then
+        ElseIf Double.Parse(BMIBox.Text) >= 18.6 AndAlso Double.Parse(BMIBox.Text) <= 25 Then
             BMICatBox.Text = "Normal (Healthy Weight)"
         ElseIf Double.Parse(BMIBox.Text) >= 25.1 AndAlso Double.Parse(BMIBox.Text) <= 30 Then
             BMICatBox.Text = "Overweight"
