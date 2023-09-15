@@ -130,9 +130,9 @@ Partial Class BMI_Main
         Me.WeightTxT.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.WeightTxT.Location = New System.Drawing.Point(12, 88)
         Me.WeightTxT.Name = "WeightTxT"
-        Me.WeightTxT.Size = New System.Drawing.Size(76, 24)
+        Me.WeightTxT.Size = New System.Drawing.Size(82, 24)
         Me.WeightTxT.TabIndex = 5
-        Me.WeightTxT.Text = "Weight"
+        Me.WeightTxT.Text = "Weight:"
         '
         'WeightBox
         '
@@ -148,9 +148,9 @@ Partial Class BMI_Main
         Me.Label3.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(12, 123)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(47, 24)
+        Me.Label3.Size = New System.Drawing.Size(53, 24)
         Me.Label3.TabIndex = 8
-        Me.Label3.Text = "BMI"
+        Me.Label3.Text = "BMI:"
         '
         'BMIBox
         '
@@ -219,9 +219,9 @@ Partial Class BMI_Main
         Me.HeightTxT.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HeightTxT.Location = New System.Drawing.Point(12, 53)
         Me.HeightTxT.Name = "HeightTxT"
-        Me.HeightTxT.Size = New System.Drawing.Size(69, 24)
+        Me.HeightTxT.Size = New System.Drawing.Size(75, 24)
         Me.HeightTxT.TabIndex = 13
-        Me.HeightTxT.Text = "Height"
+        Me.HeightTxT.Text = "Height:"
         '
         'Exp_Col
         '
