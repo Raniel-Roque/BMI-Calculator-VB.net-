@@ -24,8 +24,6 @@ Partial Class BMI_Main
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BMI_Main))
         Me.FileSystemWatcher1 = New System.IO.FileSystemWatcher()
-        Me.MenuBar = New System.Windows.Forms.MenuStrip()
-        Me.BackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HeightBox = New System.Windows.Forms.TextBox()
         Me.HeightConvert = New System.Windows.Forms.ComboBox()
         Me.WeightConvert = New System.Windows.Forms.ComboBox()
@@ -58,39 +56,17 @@ Partial Class BMI_Main
         Me.Label20 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuBar.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'FileSystemWatcher1
         '
         Me.FileSystemWatcher1.EnableRaisingEvents = True
         Me.FileSystemWatcher1.SynchronizingObject = Me
-        '
-        'MenuBar
-        '
-        Me.MenuBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.MenuBar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.MenuBar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BackToolStripMenuItem})
-        Me.MenuBar.Location = New System.Drawing.Point(0, 0)
-        Me.MenuBar.Name = "MenuBar"
-        Me.MenuBar.Padding = New System.Windows.Forms.Padding(6, 3, 6, 3)
-        Me.MenuBar.ShowItemToolTips = True
-        Me.MenuBar.Size = New System.Drawing.Size(308, 36)
-        Me.MenuBar.TabIndex = 0
-        Me.MenuBar.Text = "MenuStrip1"
-        '
-        'BackToolStripMenuItem
-        '
-        Me.BackToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.BackToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BackToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.BackToolStripMenuItem.Image = CType(resources.GetObject("BackToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.BackToolStripMenuItem.Name = "BackToolStripMenuItem"
-        Me.BackToolStripMenuItem.Padding = New System.Windows.Forms.Padding(5)
-        Me.BackToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.BackToolStripMenuItem.Size = New System.Drawing.Size(30, 30)
         '
         'HeightBox
         '
@@ -225,7 +201,7 @@ Partial Class BMI_Main
         '
         'Exp_Col
         '
-        Me.Exp_Col.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Exp_Col.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Exp_Col.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Exp_Col.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Exp_Col.FlatAppearance.BorderSize = 0
@@ -519,12 +495,37 @@ Partial Class BMI_Main
         Me.Label2.Text = "BMI Category"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HomeToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Margin = New System.Windows.Forms.Padding(0, 0, 0, 5)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(6)
+        Me.MenuStrip1.Size = New System.Drawing.Size(308, 32)
+        Me.MenuStrip1.TabIndex = 16
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'HomeToolStripMenuItem
+        '
+        Me.HomeToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.HomeToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.HomeToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.HomeToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.HomeToolStripMenuItem.Image = CType(resources.GetObject("HomeToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
+        Me.HomeToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(28, 20)
+        '
         'BMI_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(180, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(308, 309)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.Exp_Col)
         Me.Controls.Add(Me.HeightTxT)
@@ -539,26 +540,22 @@ Partial Class BMI_Main
         Me.Controls.Add(Me.WeightBox)
         Me.Controls.Add(Me.HeightConvert)
         Me.Controls.Add(Me.HeightBox)
-        Me.Controls.Add(Me.MenuBar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.MenuBar
         Me.Name = "BMI_Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BMI Calculator"
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuBar.ResumeLayout(False)
-        Me.MenuBar.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents FileSystemWatcher1 As IO.FileSystemWatcher
-    Friend WithEvents MenuBar As MenuStrip
-    Friend WithEvents BackToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents HeightBox As TextBox
     Friend WithEvents HeightConvert As ComboBox
     Friend WithEvents WeightConvert As ComboBox
@@ -591,4 +588,6 @@ Partial Class BMI_Main
     Friend WithEvents Label1 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
 End Class

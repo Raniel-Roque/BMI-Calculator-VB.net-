@@ -160,7 +160,7 @@
     End Sub
 
     Dim BMI_Loading_Form As BMI_Loading
-    Private Sub BackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BackToolStripMenuItem.Click
+    Private Sub BackToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         ' Home Button for Final Project Compilation (Placeholder for back to loading screen)
         If BMI_Loading_Form Is Nothing Then
             BMI_Loading_Form = New BMI_Loading
