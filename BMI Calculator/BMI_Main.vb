@@ -80,6 +80,12 @@
             Return
         End If
 
+        Dim result As DialogResult = MessageBox.Show("Are you sure the given information is correct?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If result = DialogResult.No Then
+            Return
+        End If
+
         ' BMI Process
         If HeightConvert.SelectedItem.ToString = "cm" Then
             ' Metric System Formula
@@ -138,6 +144,12 @@
 
     Private Sub Clear_Click(sender As Object, e As EventArgs) Handles Clear.Click
         ' Clears
+        Dim result As DialogResult = MessageBox.Show("Clear Data?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+        If result = DialogResult.No Then
+            Return
+        End If
+
         HeightBox.Clear()
         WeightBox.Clear()
         BMIBox.Clear()
@@ -159,16 +171,6 @@
         End If
     End Sub
 
-    Dim BMI_Loading_Form As BMI_Loading
-    Private Sub BackToolStripMenuItem_Click(sender As Object, e As EventArgs) 
-        ' Home Button for Final Project Compilation (Placeholder for back to loading screen)
-        If BMI_Loading_Form Is Nothing Then
-            BMI_Loading_Form = New BMI_Loading
-        End If
-        BMI_Loading_Form.Show()
-        Me.Close()
-    End Sub
-
     Private Sub HeightBox_KeyDown(sender As Object, e As KeyEventArgs) Handles HeightBox.KeyDown
         ' Once enter is pressed in the Height textbox, cursor/next input goes to weight
         If e.KeyCode = Keys.Enter Then
@@ -183,6 +185,18 @@
             e.SuppressKeyPress = True
             ActiveControl = Nothing
             Compute.PerformClick()
+        End If
+    End Sub
+    Dim BMI_Load_form As BMI_Loading
+    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to go back to main menu?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            If BMI_Load_form Is Nothing Then
+                BMI_Load_form = New BMI_Loading
+            End If
+            BMI_Load_form.Show()
+            Me.Close()
         End If
     End Sub
 End Class
