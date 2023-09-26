@@ -6,6 +6,7 @@
         ' Sets the dropdown values
         HeightConvert.SelectedItem = "cm"
         WeightConvert.SelectedItem = "kg"
+        TextBox1.Focus()
     End Sub
 
     Private Sub Compute_Click(sender As Object, e As EventArgs) Handles Compute.Click
@@ -14,21 +15,21 @@
         Dim HeightDouble, WeightDouble As Double
 
         ' Checks If textboxes are empty and informs user if so
-        If String.IsNullOrEmpty(HeightText) AndAlso String.IsNullOrEmpty(WeightText) Then
+        If (HeightTxT.Text.Equals("Enter Height") AndAlso WeightTxT.Text.Equals("Enter Weight")) Or (String.IsNullOrEmpty(HeightText) AndAlso String.IsNullOrEmpty(WeightText)) Then
             HeightTxT.ForeColor = Color.Red
             WeightTxT.ForeColor = Color.Red
             BMICatBox.Clear()
             BMIBox.Clear()
             MessageBox.Show("Error: Please fill in both height and weight.", "Missing Input", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
-        ElseIf String.IsNullOrEmpty(HeightText) Then
+        ElseIf HeightTxT.Text.Equals("Enter Height") Or String.IsNullOrEmpty(HeightText) Then
             WeightTxT.ForeColor = Color.Black
             HeightTxT.ForeColor = Color.Red
             BMICatBox.Clear()
             BMIBox.Clear()
             MessageBox.Show("Error: Please fill in height.", "Missing Input", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
-        ElseIf String.IsNullOrEmpty(WeightText) Then
+        ElseIf WeightTxT.Text.Equals("Enter Weight") Or String.IsNullOrEmpty(WeightText) Then
             HeightTxT.ForeColor = Color.Black
             WeightTxT.ForeColor = Color.Red
             BMICatBox.Clear()
@@ -150,8 +151,10 @@
             Return
         End If
 
-        HeightBox.Clear()
-        WeightBox.Clear()
+        HeightBox.Text = "Enter Height"
+        HeightBox.ForeColor = Color.Gray
+        WeightBox.Text = "Enter Weight"
+        WeightBox.ForeColor = Color.Gray
         BMIBox.Clear()
         BMICatBox.Clear()
     End Sub
@@ -197,6 +200,34 @@
             End If
             BMI_Load_form.Show()
             Me.Close()
+        End If
+    End Sub
+
+    Private Sub HeightBox_GotFocus(sender As Object, e As EventArgs) Handles HeightBox.GotFocus
+        If HeightBox.Text.Equals("Enter Height") Then
+            HeightBox.Text = ""
+            HeightBox.ForeColor = Color.Black
+        End If
+    End Sub
+
+    Private Sub HeightBox_LostFocus(sender As Object, e As EventArgs) Handles HeightBox.LostFocus
+        If HeightBox.Text.Equals("") Then
+            HeightBox.Text = "Enter Height"
+            HeightBox.ForeColor = Color.Gray
+        End If
+    End Sub
+
+    Private Sub WeightBox_GotFocus(sender As Object, e As EventArgs) Handles WeightBox.GotFocus
+        If WeightBox.Text.Equals("Enter Weight") Then
+            WeightBox.Text = ""
+            WeightBox.ForeColor = Color.Black
+        End If
+    End Sub
+
+    Private Sub WeightBox_LostFocus(sender As Object, e As EventArgs) Handles WeightBox.LostFocus
+        If WeightBox.Text.Equals("") Then
+            WeightBox.Text = "Enter Weight"
+            WeightBox.ForeColor = Color.Gray
         End If
     End Sub
 End Class

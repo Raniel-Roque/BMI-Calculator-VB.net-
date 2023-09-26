@@ -58,6 +58,7 @@ Partial Class BMI_Main
         Me.Label2 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -71,10 +72,12 @@ Partial Class BMI_Main
         'HeightBox
         '
         Me.HeightBox.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HeightBox.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.HeightBox.Location = New System.Drawing.Point(94, 51)
         Me.HeightBox.Name = "HeightBox"
         Me.HeightBox.Size = New System.Drawing.Size(146, 26)
         Me.HeightBox.TabIndex = 1
+        Me.HeightBox.Text = "Enter Height"
         '
         'HeightConvert
         '
@@ -113,10 +116,12 @@ Partial Class BMI_Main
         'WeightBox
         '
         Me.WeightBox.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.WeightBox.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.WeightBox.Location = New System.Drawing.Point(94, 86)
         Me.WeightBox.Name = "WeightBox"
         Me.WeightBox.Size = New System.Drawing.Size(146, 26)
         Me.WeightBox.TabIndex = 4
+        Me.WeightBox.Text = "Enter Weight"
         '
         'Label3
         '
@@ -140,10 +145,10 @@ Partial Class BMI_Main
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(12, 157)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(131, 22)
+        Me.Label4.Size = New System.Drawing.Size(145, 24)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "BMI Category:"
         '
@@ -211,7 +216,7 @@ Partial Class BMI_Main
         Me.Exp_Col.Location = New System.Drawing.Point(0, 281)
         Me.Exp_Col.Name = "Exp_Col"
         Me.Exp_Col.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Exp_Col.Size = New System.Drawing.Size(308, 28)
+        Me.Exp_Col.Size = New System.Drawing.Size(310, 28)
         Me.Exp_Col.TabIndex = 14
         Me.Exp_Col.Text = "BMI Table (Expand)"
         Me.Exp_Col.UseCompatibleTextRendering = True
@@ -504,7 +509,7 @@ Partial Class BMI_Main
         Me.MenuStrip1.Margin = New System.Windows.Forms.Padding(0, 0, 0, 5)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(6)
-        Me.MenuStrip1.Size = New System.Drawing.Size(308, 32)
+        Me.MenuStrip1.Size = New System.Drawing.Size(310, 32)
         Me.MenuStrip1.TabIndex = 16
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -514,17 +519,26 @@ Partial Class BMI_Main
         Me.HomeToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.HomeToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.HomeToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.HomeToolStripMenuItem.Image = CType(resources.GetObject("HomeToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.HomeToolStripMenuItem.Image = Global.BMI_Calculator.My.Resources.Resources.HomeWhite
         Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
         Me.HomeToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(28, 20)
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(390, 51)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(17, 26)
+        Me.TextBox1.TabIndex = 1
         '
         'BMI_Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(180, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(308, 309)
+        Me.ClientSize = New System.Drawing.Size(310, 309)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.Exp_Col)
@@ -590,4 +604,5 @@ Partial Class BMI_Main
     Friend WithEvents Label7 As Label
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TextBox1 As TextBox
 End Class
